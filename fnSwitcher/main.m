@@ -48,7 +48,7 @@ void* PosixThreadMainRoutine(void* data)
     int reti;
     
     /* Compile regular expression */
-    reti = regcomp(&regex, "^(iTerm|PhpStorm|muCommander)$", REG_EXTENDED);
+    reti = regcomp(&regex, "^(iTerm|Terminal|PhpStorm|muCommander)$", REG_EXTENDED);
     if( reti ){ fprintf(stderr, "Could not compile regex\n"); exit(1); }
     
     // Do some work here.
